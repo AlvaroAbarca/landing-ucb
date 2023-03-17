@@ -11,8 +11,9 @@ const Landing = () => {
   return (
     <>
 
-      <NavBar />
+
       <div className='main-section hero-wrap'>
+        <NavBar />
         <div className='overlay' />
         <Container>
           <Row className='g-0 align-items-center' style={{ height: '907px' }}>
