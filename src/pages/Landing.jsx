@@ -3,18 +3,15 @@ import React from 'react'
 import '../styles/landing.css'
 import NavBar from '../components/NavBar'
 
-import { Col, Container, Nav, NavDropdown, Row, Offcanvas, Form, Button } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 // import { NavLink, Link } from 'react-router-dom'
 
 const Landing = () => {
   return (
     <>
-
-
+      <NavBar />
       <div className='main-section hero-wrap'>
-        <NavBar />
-        <div className='overlay' />
         <Container>
           <Row className='g-0 align-items-center' style={{ height: '907px' }}>
             <Col sm='12' className='align-self-center text-center'>
