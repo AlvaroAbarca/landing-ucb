@@ -6,7 +6,7 @@ import '../styles/landing.css'
 import { Col, Container, Nav, Navbar, NavDropdown, Row, Offcanvas, Form, Button } from 'react-bootstrap'
 
 // import { NavLink, Link } from 'react-router-dom'
-
+// Se agrego el video para bienvenida
 const Landing = () => {
   return (
     <>
