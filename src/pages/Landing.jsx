@@ -2,6 +2,7 @@
 import React from 'react'
 import '../styles/landing.css'
 
+
 import { Col, Container, Nav, Navbar, NavDropdown, Row, Offcanvas, Form, Button } from 'react-bootstrap'
 
 // import { NavLink, Link } from 'react-router-dom'
@@ -11,43 +12,8 @@ const Landing = () => {
     <>
       <Container>
         <Navbar bg='light' expand='false'>
-          <Navbar.Brand to='/'>Ucb Melipilla</Navbar.Brand>
+          <Navbar.Brand to='/'>UCB Melipilla</Navbar.Brand>
           <Navbar.Toggle aria-controls='navbarScroll' />
-          {/* <Navbar.Offcanvas>
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-              Offcanvas
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-          <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown
-              title="Dropdown"
-              id={`offcanvasNavbarDropdown-expand`}
-            >
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Offcanvas.Body>
-        </Navbar.Offcanvas> */}
           <Navbar.Collapse id='navbarScroll'>
             <Nav>
               <Nav.Link to='/'>Inicio</Nav.Link>
@@ -64,23 +30,28 @@ const Landing = () => {
           </Navbar.Collapse>
         </Navbar>
       </Container>
-      <div className='main-section hero-wrap'>
-        <div className='overlay' />
-        <Container>
-          <Row className='g-0 align-items-center' style={{ height: '907px' }}>
-            <Col sm='12' className='align-self-center text-center'>
-              <h1 className='mb-0'>Helping Grow Your Faith</h1>
-              <h3 className='subheading mb-4 pb-1'>Submit your presence to the creator of the universe</h3>
-              <p><a href='#' className='btn btn-primary py-3 px-4'>New here!</a> <a href='#' className='btn btn-white py-3 px-4'><span className='icon-play-circle' /> Live Stream</a></p>
-              <div className='mouse'>
-                <a href='#' className='mouse-icon'>
-                  <div className='mouse-wheel'><span className='ion-ios-arrow-down' /></div>
-                </a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <header>
+      <video class="video-bg" muted autoPlay loop>
+		<source src="videoo.mp4" type="video/mp4"/>
+	</video>
+
+	<div class="video-overlay">
+  <h2 className='iglesia'>IGLESIA CRISTIANA</h2>
+
+		<h1 className='titulo'>Cristo al mundo de Melipilla</h1>
+    <br/>
+    <h2 className='iglesia'>UNIÓN DE CENTROS BÍBLICOS</h2>
+	</div>
+  </header>
+
+  <main>
+<h2>Lorem Ipsum</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorum totam dicta quidem eaque quos neque, dolor numquam itaque placeat! Id quia at officia, accusamus placeat vero sed ea quo voluptates. Earum praesentium saepe maxime, esse veniam aperiam,
+  officiis beatae error voluptatem odit provident optio vel eum nemo, facilis numquam fugit laboriosam. Libero veritatis repellendus quo. Facere perferendis blanditiis, voluptates cupiditate veniam repudiandae cumque sit provident nobis, beatae aut aliquam
+  dolorem qui porro repellendus totam animi delectus laudantium.</p>
+
+</main>
     </>
   )
 }
