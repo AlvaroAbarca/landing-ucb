@@ -1,19 +1,44 @@
 :root {
-  font-size: 10px;
+  /* font-size: 10px; */
   --fullGrid: 1 / 1 / -1 / -1;
 }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif;
-  background-color: #fcfcfc;
+  font-family: 'Montserrat', 'sans-serif' !important;
 }
 
-header {
+.main-section {
+  /* background-image: url("images/bg_1.jpg"); */
+  height: 907px;
+  background-position: 50% -25px;
+}
+
+
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh;
+}
+
+h2 { font-size: 3rem; }
+
+/* body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #fcfcfc;
+} */
+
+/* header {
   display: grid;
   grid-template-rows: 100vh;
   overflow: hidden;
   box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5);
-}
+} */
 
 .video-bg {
   grid-area: var(--fullGrid);
@@ -38,7 +63,7 @@ header {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-h1{
+/* h1{
   font-size: 100px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -84,4 +109,12 @@ p {
 ::selection {
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
+} */
+.ftco-animate {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav--link--color {
+  color: rgba(0, 0, 0, 0.55)
 }
