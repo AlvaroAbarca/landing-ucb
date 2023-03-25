@@ -1,32 +1,15 @@
 import React, { useState, useEffect } from 'react'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 
 const NavBar = () => {
-  const [navStyle, setNavStyle] = useState({
-    backgroundColor: 'transparent',
-    color: 'white',
-    position: 'sticky',
-    top: '0',
-    transition: 'background-color 0.5s, color 0.5s',
-    fontFamily: 'Montserrat, sans-serif', //, 'sans-serif'
-    boxShadow: 'none'
-  })
-
-  const [navLinkStyle, setNavLinkStyle] = useState({
-    color: 'rgba(0, 0, 0, 0.55)'
-  })
+  const [flag, setFlag] = useState(false)
 
   const handleScroll = () => {
     const threshold = 50
     if (window.pageYOffset > threshold) {
-      setNavStyle(prev => {
-        return { ...prev, backgroundColor: '#343a40', boxShadow: '0px 3px 10px 0px rgba(0,0,0,0.5)' } // Cambia a cualquier color que desees
-      })
-      setNavLinkStyle({ color: 'white' })
+      setFlag(true)
     } else {
-      setNavStyle(prev => {
-        return { ...prev, backgroundColor: 'transparent', boxShadow: 'none' }
-      })
-      setNavLinkStyle({ color: 'rgba(0, 0, 0, 0.55)' })
+      setFlag(false)
     }
   }
 
@@ -38,49 +21,29 @@ const NavBar = () => {
   }, [])
 
   return (
-    <nav className="navbar navbar-expand-lg container-fluid" style={{ ...navStyle }}>
-      <a className="navbar-brand ms-3" href="/" style={navLinkStyle}>Mi App</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul className="navbar-nav"></ul>
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="/" style={navLinkStyle} >Inicio</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/" style={navLinkStyle}>Quiénes Somos</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/" style={navLinkStyle}>Ministerios</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/" style={navLinkStyle}>En qué creemos</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/" style={navLinkStyle}>Servicios</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/acerca-de" style={navLinkStyle} >Prédicas</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/contacto" style={navLinkStyle} >Contacto</a>
-          </li>
-        </ul>
-        <ul className="navbar-nav me-3">
-          <li className="nav-item">
-            <a className="nav-link" href="/contacto" style={navLinkStyle}><i className="bi bi-facebook"></i></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/contacto" style={navLinkStyle}><i className="bi bi-instagram"></i></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/contacto" style={navLinkStyle}><i className="bi bi-youtube"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar bg={ flag ? 'dark' : 'light' } variant={ flag ? 'dark' : 'light' } expand="lg" sticky="top">
+      <Container fluid>
+        <Navbar.Brand href="/" className="ms-3">Mi App</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav></Nav>
+          <Nav className="mx-auto">
+            <Nav.Link href="#home">Inicio</Nav.Link>
+            <Nav.Link href="#link">Quiénes Somos</Nav.Link>
+            <Nav.Link href="#link">Ministerios</Nav.Link>
+            <Nav.Link href="#link">En qué creemos</Nav.Link>
+            <Nav.Link href="#link">Servicios</Nav.Link>
+            <Nav.Link href="#link">Prédicas</Nav.Link>
+            <Nav.Link href="#link">Contacto</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/contacto"><i className="bi bi-facebook"></i></Nav.Link>
+            <Nav.Link href="/contacto"><i className="bi bi-instagram"></i></Nav.Link>
+            <Nav.Link href="/contacto"><i className="bi bi-youtube"></i></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 export default NavBar
