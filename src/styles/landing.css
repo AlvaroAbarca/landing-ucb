@@ -1,5 +1,9 @@
+body {
+  font-family: 'Montserrat', 'sans-serif' !important;
+}
+
 .main-section {
-  background-image: url("images/bg_1.jpg");
+  /* background-image: url("images/bg_1.jpg"); */
   height: 907px;
   background-position: 50% -25px;
 }
@@ -28,4 +32,8 @@
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
+}
+
+.nav--link--color {
+  color: rgba(0, 0, 0, 0.55)
 }
