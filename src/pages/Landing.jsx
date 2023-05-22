@@ -1,7 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import '../styles/landing.css'
+// import '../styles/landing.css'
 import NavBar from '../components/NavBar'
+import MainSection from '../components/MainSection'
+import MembersSection from '../components/MembersSection'
+import AboutSection from '../components/AboutSection'
 
 // import { NavLink, Link } from 'react-router-dom'
 // Se agrego el video para bienvenida
@@ -9,7 +12,10 @@ const Landing = () => {
   return (
     <>
       <NavBar />
-      <main>
+      <MainSection />
+      <MembersSection />
+      <AboutSection />
+      {/* <main>
         <video id='background-video' className="video-bg" muted autoPlay loop>
           <source src="videoo.mp4" type="video/mp4"/>
         </video>
@@ -20,7 +26,7 @@ const Landing = () => {
         <h1 className='titulo'>Cristo al mundo de Melipilla</h1>
         <br/>
         <h2 className='iglesia'>UNIÓN DE CENTROS BÍBLICOS</h2>
-      </div>
+      </div> */}
 
       <section>
         <h2>Lorem Ipsum</h2>
