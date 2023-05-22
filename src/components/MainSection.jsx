@@ -5,7 +5,7 @@ const MainSection = () => {
     <main className="main-section">
       <div className="video-container">
         <video autoPlay muted loop>
-          <source src="videoo.mp4" type="video/mp4" />
+          <source src="videos/background-video.mp4" type="video/mp4" />
         </video>
         <div className="overlay" />
       </div>
