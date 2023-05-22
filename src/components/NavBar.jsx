@@ -23,7 +23,9 @@ const NavBar = () => {
   return (
     <Navbar bg={ flag ? 'dark' : 'light' } variant={ flag ? 'dark' : 'light' } expand="lg" sticky="top">
       <Container fluid>
-        <Navbar.Brand href="/" className="ms-3">Mi App</Navbar.Brand>
+        <Navbar.Brand href="/" className="ms-3">
+          <img src={ flag ? '/logos/logo_white.png' : '/logos/logo_black.png' } alt="" width="60" height="60" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav></Nav>

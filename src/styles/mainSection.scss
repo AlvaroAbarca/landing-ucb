@@ -1,0 +1,44 @@
+.main-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  
+    .content-container {
+      z-index: 1;
+      text-align: center;
+      h1 {
+        font-size: 4rem;
+        color: white;
+      }
+      .sub--title {
+        font-size: 2rem;
+        color: white;
+      }
+    }
+  }
+  

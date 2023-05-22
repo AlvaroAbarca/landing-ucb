@@ -1,3 +1,8 @@
+:root {
+  /* font-size: 10px; */
+  --fullGrid: 1 / 1 / -1 / -1;
+}
+
 body {
   font-family: 'Montserrat', 'sans-serif' !important;
 }
@@ -8,27 +13,103 @@ body {
   background-position: 50% -25px;
 }
 
-.hero-wrap {
-  width: 100%;
-  height: 100%;
-  position: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  position: relative;
+
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
 }
 
-.hero-wrap .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: '';
-  opacity: .2;
-  background: #000000;
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh;
 }
 
+h2 { font-size: 3rem; }
+
+/* body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #fcfcfc;
+} */
+
+/* header {
+  display: grid;
+  grid-template-rows: 100vh;
+  overflow: hidden;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5);
+} */
+
+.video-bg {
+  grid-area: var(--fullGrid);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-overlay {
+  grid-area: var(--fullGrid);
+
+  /* Center Content */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* h1{
+  font-size: 100px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
+}
+
+.titulo{
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+  padding: 5em 2em;
+  max-width: 94em;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 100px;
+  text-align: center;
+  margin: 1.2em 0;
+  color: #111;
+}
+.iglesia{
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-size: calc(2em + 0.2vw);
+  font-weight: 400;
+  line-height: 2;
+  color: #222;
+}
+
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+} */
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
