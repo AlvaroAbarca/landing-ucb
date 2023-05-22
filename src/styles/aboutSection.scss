@@ -1,0 +1,9 @@
+.about-section {
+    background-color: rgb(var(--bs-dark-rgb), 0.1);
+    padding: $spacer*2 0;
+    @include media-breakpoint-up(xs) {
+        .about-logo {
+            margin-bottom: $spacer;
+        }
+    }    
+}
