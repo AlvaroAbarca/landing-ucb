@@ -1,0 +1,27 @@
+.about-section {
+    background-color: rgb(var(--bs-dark-rgb), 0.1);
+    padding: $spacer*4 0;
+    text-align: center;
+    .about-logo {
+        width: 75%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .section-description, a {
+        font-size: $font-size-lg;
+    }
+    a {
+        color:rgb(var(--bs-dark-rgb), 1)
+    }
+    @include media-breakpoint-up(xs) {
+        .about-logo {
+            margin-bottom: $spacer;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        .about-logo {
+            margin-bottom: $spacer*2;
+        }
+    }   
+}

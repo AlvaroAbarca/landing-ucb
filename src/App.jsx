@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React, { useState } from 'react'
 // import './App.css'
 
-
-import Landing from './pages/Landing';
+import Landing from './pages/Landing'
 // import Layout from './layouts/Layout';
 
-function App() {
+function App () {
   const [count, setCount] = useState(0)
 
   return (
