@@ -5,15 +5,14 @@ const AboutSection = () => {
     <section className="about-section">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 text-center">
+          <div className="col-md-4 col-12">
             <img
-              src="/logos/logo_black.png"
-              width={350}
+              src="/logos/welcome_black.png"
               alt="logo de la iglesia"
               className="img-fluid about-logo"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-8 col-12">
             <h2 className="section-title">Quiénes somos</h2>
             <p className="section-description">
               La Iglesia UCB Melipilla es una comunidad cristiana que busca
