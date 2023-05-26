@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Card, Button } from 'react-bootstrap'
+import { Row, Col, Card } from 'react-bootstrap'
 
 const MembersSection = () => {
   return (
@@ -37,27 +37,6 @@ const MembersSection = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <div className="col-md-4">
-            <div className="member-card">
-              <img src="https://picsum.photos/id/1019/300/300" alt="Member" />
-              <h3 className="member-name">Juan Leyton</h3>
-              <p className="member-description">Pastor Asesor</p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="member-card">
-              <img src="https://picsum.photos/id/1019/300/300" alt="Member" />
-              <h3 className="member-name">Jonanthan Palma</h3>
-              <p className="member-description">Anciano</p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="member-card">
-              <img src="https://picsum.photos/id/1019/300/300" alt="Member" />
-              <h3 className="member-name">Carlos Liempi</h3>
-              <p className="member-description">Anciano</p>
-            </div>
-          </div> */}
         </Row>
       </div>
     </section>
